@@ -1,0 +1,15 @@
+ID:
+ID:1
+ID:1\
+ID:1'
+ID:1' || '
+ID:1'  '
+ID:1'  'a
+ID:1'  || 'a
+ID:1'  union select 1,2,3 || 'a
+ID:-1'  union select 1,2,3 || 'a
+ID:-1'  union select 1,2,3 -- 
+ID:-1'  union select 1,2,3 'a
+ID:1'
+ID:1\
+ID:1'  union select 1,2,3 || 'a

