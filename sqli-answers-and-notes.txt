@@ -147,3 +147,5 @@ select min(@a:=1) from information_schema.tables group by concat_ws(":", version
 select * from (select NAME_CONST(version(),1),NAME_CONST(version(),1))x;
 select extractvalue(1,concat(":",(select @@version), ":"));
 select updatexml(1,concat(":",(select version()),":"),1);
+select if(database() regexp '^e', sleep(5), 1);
+select if(database() regexp '^sec', benchmark(50000000, encode("msg", "by 5 seconds")), 1);
