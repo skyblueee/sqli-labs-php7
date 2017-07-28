@@ -35,40 +35,40 @@
 //including the Mysql connect parameters.
 include("../sql-connections/sqli-connect.php");
 error_reporting(0);
+$a = 1;
 
-function check_input($value)
-	{
+function check_input($con1, $value)
+{
 	if(!empty($value))
-		{
+	{
 		// truncation (see comments)
 		$value = substr($value,0,15);
-		}
-
-		// Stripslashes if magic quotes enabled
-		if (get_magic_quotes_gpc())
-			{
-			$value = stripslashes($value);
-			}
-
-		// Quote if not a number
-		if (!ctype_digit($value))
-			{
-			$value = "'" . mysqli_real_escape_string($con1, $value) . "'";
-			}
-		
-	else
-		{
-		$value = intval($value);
-		}
-	return $value;
 	}
+
+	// Stripslashes if magic quotes enabled
+	if (get_magic_quotes_gpc())
+	{
+		$value = stripslashes($value);
+	}
+
+	// Quote if not a number
+	if (!ctype_digit($value))
+	{
+		$value = "'" . mysqli_real_escape_string($con1, $value) . "'";
+	}
+	else
+	{
+		$value = intval($value);
+	}
+	return $value;
+}
 
 // take the variables
 if(isset($_POST['uname']) && isset($_POST['passwd']))
 
 {
 //making sure uname is not injectable
-$uname=check_input($_POST['uname']);  
+$uname=check_input($con1, $_POST['uname']);  
 
 $passwd=$_POST['passwd'];
 
@@ -93,6 +93,7 @@ $row = mysqli_fetch_array($result, MYSQLI_BOTH);
 		//echo 'Your Login name:'. $row1;
 		$update="UPDATE users SET password = '$passwd' WHERE username='$row1'";
 		mysqli_query($con1, $update);
+		//echo $update;
   		echo "<br>";
 	
 	

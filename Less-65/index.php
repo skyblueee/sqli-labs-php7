@@ -41,7 +41,7 @@ if(!isset($_POST['answer_key']))
 		echo "Redirecting you to main challenge page..........\n";
 		header( "refresh:4;url=../sql-connections/setup-db-challenge.php?id=$pag" );
 		//echo "cookie expired";
-			
+
 	}
 	else
 	{
@@ -56,31 +56,31 @@ if(!isset($_POST['answer_key']))
 			$expire = time()+60*60*24*30;
 			$hash = data($table,$col);
 			setcookie("challenge", $hash, $expire);
-			
+
 		}
-	
+
 		echo "<br>\n";
-	
+
 		// take the variables
 		if(isset($_GET['id']))
 		{
 			$id=$_GET['id'];
-	
+
 			//logging the connection parameters to a file for analysis.
 			$fp=fopen('result.txt','a');
 			fwrite($fp,'ID:'.$id."\n");
 			fclose($fp);
-	
-			
+
+
 			//update the counter in database
 			next_tryy();
-			
+
 			//Display attempts on screen.
 			$tryyy = view_attempts();
 			echo "You have made : ". $tryyy ." of $times attempts";
 			echo "<br><br><br>\n";
-		
-			
+
+
 			//Reset the Database if you exceed allowed attempts.
 			if($tryyy >= ($times+1))
 			{
@@ -90,8 +90,8 @@ if(!isset($_POST['answer_key']))
 				header( "refresh:3;url=../sql-connections/setup-db-challenge.php?id=$pag" );
 				echo "<br>\n";
 			}	
-		
-		
+
+
 			$id = '"'.$id.'"';
 			// Querry DB to get the correct output
 			$sql="SELECT * FROM security.users WHERE id=($id) LIMIT 0,1";
@@ -111,7 +111,7 @@ if(!isset($_POST['answer_key']))
 			else 
 			{
 				echo '<font color= "#FFFF00">';
-//				print_r(mysqli_error($con1));
+				//				print_r(mysqli_error($con1));
 				echo "</font>";  
 			}
 		}
@@ -121,24 +121,24 @@ if(!isset($_POST['answer_key']))
 			echo "<font color='#00FFFF': size=3>The objective of this challenge is to dump the <b>(secret key)</b> from only random table from Database <b><i>('CHALLENGES')</i></b> in Less than $times attempts<br>";
 			echo "For fun, with every reset, the challenge spawns random table name, column name, table data. Keeping it fresh at all times.<br>" ;
 		}
-	
+
 	}
-	
-
-?>
-</font> </div></br></br></br><center>
-<img src="../images/Less-65.jpg" />
-</center>
-<br><br><br>
-<div  style=" color:#00FFFF; font-size:18px; text-align:center">
-<form name="input" action="" method="post">
-Submit Secret Key: <input type="text" name="key">
-<input type="submit" name = "answer_key" value="Submit">
-</form> 
-</div>
 
 
-<?php
+	?>
+		</font> </div></br></br></br><center>
+		<img src="../images/Less-65.jpg" />
+		</center>
+		<br><br><br>
+		<div  style=" color:#00FFFF; font-size:18px; text-align:center">
+		<form name="input" action="" method="post">
+		Submit Secret Key: <input type="text" name="key">
+		<input type="submit" name = "answer_key" value="Submit">
+		</form> 
+		</div>
+
+
+		<?php
 
 }
 
@@ -152,9 +152,9 @@ else
 	$sql="SELECT 1 FROM $table WHERE $col1= '$key'";
 	//echo "$sql";
 	$result=mysqli_query($con1, $sql)or die("error in submittion of Key Solution".mysqli_error($con1));
-	 
+
 	$row = mysqli_fetch_array($result, MYSQLI_BOTH);
-	
+
 	if($row)
 	{
 		echo '<font color= "#FFFF00">';
@@ -171,7 +171,7 @@ else
 		header( "refresh:3;url=index.php" );
 		//print_r(mysqli_error($con1));
 		echo "</font>";  
-			}	
+	}	
 
 
 }
@@ -185,4 +185,4 @@ else
 
 
 
- 
+

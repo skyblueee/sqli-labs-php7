@@ -34,7 +34,7 @@
 include("../sql-connections/sqli-connect.php");
 error_reporting(0);
 	
-function check_input($value)
+function check_input($con1, $value)
 	{
 	if(!empty($value))
 		{

@@ -44,7 +44,7 @@ if(!isset($_COOKIE['uname']))
 
 
 	
-function check_input($value)
+function check_input($con1, $value)
 	{
 	if(!empty($value))
 		{
