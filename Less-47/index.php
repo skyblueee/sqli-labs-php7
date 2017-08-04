@@ -61,7 +61,7 @@ if(isset($id))
 		echo "Please input parameter as SORT with numeric value<br><br><br><br>";
 		echo "<br><br><br>";
 		echo '<img src="../images/Less-47.jpg" /><br>';
-		echo "Lesson Concept and code Idea by <b>D4rk</b>";
+		echo "Lesson Concept and code by <b>D4rk</b>";
 	}
 ?>
 		

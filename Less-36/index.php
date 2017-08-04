@@ -15,7 +15,7 @@
 include("../sql-connections/sqli-connect.php");
 error_reporting(0);
 
-function check_quotes($string)
+function check_quotes($con1, $string)
 {
     $string=mysqli_real_escape_string($con1, $string);    
     return $string;
@@ -24,7 +24,7 @@ function check_quotes($string)
 // take the variables 
 if(isset($_GET['id']))
 {
-$id=check_quotes($_GET['id']);
+$id=check_quotes($con1, $_GET['id']);
 //echo "The filtered request is :" .$id . "<br>";
 
 //logging the connection parameters to a file for analysis.

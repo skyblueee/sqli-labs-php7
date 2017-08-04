@@ -1,0 +1,8 @@
+User Name:fdsafPassword:fdsaf
+User Name:dsafa\Password:fdsaf
+User Name:adminPassword:admin
+User Name:admin\"Password:
+User Name:ï¿½' union select 1,2 #Password:a
+User Name:adminª' union select 1,3 # Password:
+User Name:adminª' union select 1,3 # Password:
+User Name:adminª' union select 1,3 # Password:

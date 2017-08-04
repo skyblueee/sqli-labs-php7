@@ -17,57 +17,56 @@ include("../sql-connections/sqli-connect.php");
 
 if (isset($_POST['submit']))
 {
-	
 
-# Validating the user input........
+
+	# Validating the user input........
 
 	//$username=  $_POST['username'] ;
 	$username=  mysqli_real_escape_string($con1, $_POST['username']) ;
 	$pass= mysqli_real_escape_string($con1, $_POST['password']);
 	$re_pass= mysqli_real_escape_string($con1, $_POST['re_password']);
-	
+
 	echo "<font size='3' color='#FFFF00'>";
 	$sql = "select count(*) from users where username='$username'";
 	$res = mysqli_query($con1, $sql) or die('You tried to be smart, Try harder!!!! :( ');
-  	$row = mysqli_fetch_row($res);
-	
+	$row = mysqli_fetch_row($res);
+
 	//print_r($row);
-	if (!$row[0]== 0) 
-		{
+	if (!$row[0]==0) 
+	{
 		?>
 		<script>alert("The username Already exists, Please choose a different username ")</script>;
 		<?php
 		header('refresh:1, url=new_user.php');
-   		} 
-		else 
+	} 
+	else 
+	{
+		if ($pass==$re_pass)
 		{
-       		if ($pass==$re_pass)
-			{
-				# Building up the query........
-   				
-   				$sql = "insert into users ( username, password) values(\"$username\", \"$pass\")";
-   				mysqli_query($con1, $sql) or die('Error Creating your user account,  : '.mysqli_error($con1));
-					echo "</br>";
-					echo "<center><img src=../images/Less-24-user-created.jpg><font size='3' color='#FFFF00'>";   				
-					//echo "<h1>User Created Successfully</h1>";
-					echo "</br>";
-					echo "</br>";
-					echo "</br>";					
-					echo "</br>Redirecting you to login page in 5 sec................";
-					echo "<font size='2'>";
-					echo "</br>If it does not redirect, click the home button on top right</center>";
-					header('refresh:5, url=index.php');
-			}
-			else
-			{
+			# Building up the query........
+
+			$sql = "insert into users (username, password) values(\"$username\", \"$pass\")";
+			mysqli_query($con1, $sql) or die('Error Creating your user account,  : '.mysqli_error($con1));
+			echo "</br>";
+			echo "<center><img src=../images/Less-24-user-created.jpg><font size='3' color='#FFFF00'>";   				
+			//echo "<h1>User Created Successfully</h1>";
+			echo "</br>";
+			echo "</br>";
+			echo "</br>";					
+			echo "</br>Redirecting you to login page in 5 sec................";
+			echo "<font size='2'>";
+			echo "</br>If it does not redirect, click the home button on top right</center>";
+			header('refresh:5, url=index.php');
+		}
+		else
+		{
 			?>
 			<script>alert('Please make sure that password field and retype password match correctly')</script>
 			<?php
 			header('refresh:1, url=new_user.php');
-			}
 		}
+	}
 }
-
 
 
 ?>
